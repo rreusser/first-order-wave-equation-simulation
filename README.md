@@ -23,10 +23,11 @@ This repo implements solutions using the following methods in time:
 and in space:
 
 - Explicit first order upwind finite difference
+- Explicit first order downwind finite difference (always unstable)
 - Explicit central second order finite difference
 - Implicit sixth order compact scheme [[1]](#1)
 - Implicit eighth order compact scheme [[1]](#1)
-- Spectral (= FFT, resolves wavenumber exactly)
+- Spectral (= [FFT](http://scijs.net/packages/#scijs/ndarray-fft)), resolves wavenumber exactly)
 
 As a brief aside, compact schemes are similar to more common explicit finite differences, except they achieve a higher order of accuracy for a smaller stencil by solving for all derivatives simultaneously. The general form is [[1]](#1)
 
