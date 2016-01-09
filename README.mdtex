@@ -36,14 +36,14 @@ This is a tridiagonal system that can be solved periodically to avoid dealing wi
 
 ## Demos
 
-- [Euler, Upwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=euler&space=upwind&cfl=0.2) (dissipative)
-- [Euler, Downwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=euler&space=downwind&cfl=0.2) (unstable)
-- [Euler, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=euler&space=central&cfl=0.2) (unstable)
-- [Midpoint, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=midpoint&space=central&cfl=0.2) (dispersive)
-- [RK4, Sixth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=rk4&space=compact6&cfl=0.2) (stable)
-- [RK4, Eigth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=rk4&space=compact8&cfl=0.2) (dissipative)
-- [RK4, Spectral, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=rk4&space=spectral&cfl=0.2) (exact wavenumber resolution)
-- [RK4, Spectral, CFL = 0.5](http://rickyreusser.com/first-order-wave-equation-simulation/?time=rk4&space=spectral&cfl=0.5) (exact wavenumber resolution; dissipative?)
+- [Euler, Upwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=upwind&cfl=0.2) (dissipative)
+- [Euler, Downwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=downwind&cfl=0.2) (unstable)
+- [Euler, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=central&cfl=0.2) (unstable)
+- [Midpoint, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=midpoint&space=central&cfl=0.2) (dispersive)
+- [RK4, Sixth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=compact6&cfl=0.2) (stable)
+- [RK4, Eigth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=compact8&cfl=0.2) (dissipative)
+- [RK4, Spectral, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=spectral&cfl=0.2) (exact wavenumber resolution)
+- [RK4, Spectral, CFL = 0.5](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=spectral&cfl=0.5) (exact wavenumber resolution; dissipative?)
 
 ## References
 Lele, S. K. (1992). [Compact Finite Difference Schemes with Spectral-like Resolution](http://www.math.colostate.edu/~yzhou/course/math750_fall2009/Lele_1992JCP.pdf). Journal of Computational Physics, 103, 16-42.
