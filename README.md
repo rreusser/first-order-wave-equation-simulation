@@ -37,7 +37,7 @@ This is a tridiagonal system that can be solved periodically to avoid dealing wi
 ## Demos
 
 - [Euler, Upwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=euler&space=upwind&cfl=0.2) (dissipative)
-- [Euler, Downwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=euler&space=upwind&cfl=0.2) (unstable)
+- [Euler, Downwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=euler&space=downwind&cfl=0.2) (unstable)
 - [Euler, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=euler&space=central&cfl=0.2) (unstable)
 - [Midpoint, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=midpoint&space=central&cfl=0.2) (dispersive)
 - [RK4, Sixth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulation/?time=rk4&space=compact6&cfl=0.2) (stable)
