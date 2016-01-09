@@ -27,7 +27,7 @@ and in space:
 - Explicit [central second order](./src/central.js) finite difference
 - Implicit [sixth order compact](./src/compact-sixth-order.js) scheme [[1]](#1)
 - Implicit [eighth order compact](./src/compact-eighth-order.js) scheme [[1]](#1)
-- Spectral (= [FFT](http://scijs.net/packages/#scijs/ndarray-fft)), resolves wavenumber exactly)
+- [Spectral](./src/spectral.js) (= [FFT](http://scijs.net/packages/#scijs/ndarray-fft)), resolves wavenumber exactly)
 
 As a brief aside, compact schemes are similar to more common explicit finite differences, except they achieve a higher order of accuracy for a smaller stencil by solving for all derivatives simultaneously. The general form is [[1]](#1)
 
