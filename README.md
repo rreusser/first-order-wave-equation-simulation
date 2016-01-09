@@ -1,4 +1,4 @@
-# first-order-wave-equation-simulation
+# first-order-wave-equation-simulations
 
 Nothing too interesting here. Just wasting time trying to figure out what it means to carry things all the way through and actually use [scijs](http://scijs.net/packages). So this repo implements a simple simulation of the first-order wave equation,
 
