@@ -16,6 +16,8 @@ and measures how far the solution moves in a single time step relative to the gr
 
 ## Demos
 
+The demos below should show a wave traveling uniformly to the right. The extent to which the high-frequency waves move more slowly than the low-frequency waves is error calledd dispersion. The tendency for the high-frequency waves to get damped out is error called dissipation. The most accurate method is RK4 + Spectral.
+
 - [Euler, Upwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=upwind&cfl=0.2) (dissipative)
 - [Euler, Downwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=downwind&cfl=0.2) (unstable)
 - [Euler, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=central&cfl=0.2) (unstable)
