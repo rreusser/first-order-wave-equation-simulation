@@ -14,6 +14,19 @@ $$ CFL = \frac{c \Delta t}{\Delta x}$$
 
 and measures how far the solution moves in a single time step relative to the grid spacing. CFL = 1 indicates the solution moves a full grid step in each time step and defines a baseline limit of stability, though the individual methods differ.
 
+## Demos
+
+- [Euler, Upwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=upwind&cfl=0.2) (dissipative)
+- [Euler, Downwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=downwind&cfl=0.2) (unstable)
+- [Euler, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=central&cfl=0.2) (unstable)
+- [Midpoint, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=midpoint&space=central&cfl=0.2) (dispersive)
+- [RK4, Sixth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=compact6&cfl=0.2) (stable)
+- [RK4, Eigth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=compact8&cfl=0.2) (dissipative)
+- [RK4, Spectral, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=spectral&cfl=0.2) (exact wavenumber resolution)
+- [RK4, Spectral, CFL = 0.5](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=spectral&cfl=0.5) (exact wavenumber resolution; dissipative?)
+
+# Methods
+
 This repo implements solutions using the following methods in time:
 
 - First order [Euler integration](http://scijs.net/packages/#scijs/ode-euler)
@@ -34,17 +47,6 @@ As a brief aside, compact schemes are similar to more common explicit finite dif
 $$ \alpha f'_{i-1} + f'_i + \alpha f'_{i + 1} = c\frac{f_{i + 3} - f_{i - 3}}{6\Delta x} + b\frac{f_{i + 2} - f_{i - 2}}{4\Delta x} + a\frac{f_{i + 1} - f_{i - 1}}{2\Delta x} $$
 
 This is a tridiagonal system that can be [solved periodically](http://scijs.net/packages/#scijs/solve-periodic-tridiagonal) to avoid dealing with boundary conditions.
-
-## Demos
-
-- [Euler, Upwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=upwind&cfl=0.2) (dissipative)
-- [Euler, Downwind, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=downwind&cfl=0.2) (unstable)
-- [Euler, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=euler&space=central&cfl=0.2) (unstable)
-- [Midpoint, Second order central, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=midpoint&space=central&cfl=0.2) (dispersive)
-- [RK4, Sixth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=compact6&cfl=0.2) (stable)
-- [RK4, Eigth-order compact, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=compact8&cfl=0.2) (dissipative)
-- [RK4, Spectral, CFL = 0.2](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=spectral&cfl=0.2) (exact wavenumber resolution)
-- [RK4, Spectral, CFL = 0.5](http://rickyreusser.com/first-order-wave-equation-simulations/?time=rk4&space=spectral&cfl=0.5) (exact wavenumber resolution; dissipative?)
 
 ## References
 Lele, S. K. (1992). [Compact Finite Difference Schemes with Spectral-like Resolution](http://www.math.colostate.edu/~yzhou/course/math750_fall2009/Lele_1992JCP.pdf). Journal of Computational Physics, 103, 16-42.
