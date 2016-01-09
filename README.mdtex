@@ -23,16 +23,17 @@ This repo implements solutions using the following methods in time:
 and in space:
 
 - Explicit first order upwind finite difference
+- Explicit first order downwind finite difference (always unstable)
 - Explicit central second order finite difference
 - Implicit sixth order compact scheme [[1]](#1)
 - Implicit eighth order compact scheme [[1]](#1)
-- Spectral (= FFT, resolves wavenumber exactly)
+- Spectral (= [FFT](http://scijs.net/packages/#scijs/ndarray-fft)), resolves wavenumber exactly)
 
 As a brief aside, compact schemes are similar to more common explicit finite differences, except they achieve a higher order of accuracy for a smaller stencil by solving for all derivatives simultaneously. The general form is [[1]](#1)
 
 $$ \alpha f'_{i-1} + f'_i + \alpha f'_{i + 1} = c\frac{f_{i + 3} - f_{i - 3}}{6\Delta x} + b\frac{f_{i + 2} - f_{i - 2}}{4\Delta x} + a\frac{f_{i + 1} - f_{i - 1}}{2\Delta x} $$
 
-This is a tridiagonal system that can be solved periodically to avoid dealing with boundary conditions.
+This is a tridiagonal system that can be [solved periodically](http://scijs.net/packages/#scijs/solve-periodic-tridiagonal) to avoid dealing with boundary conditions.
 
 ## Demos
 

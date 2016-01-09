@@ -32,7 +32,7 @@ As a brief aside, compact schemes are similar to more common explicit finite dif
 
 <p align="center"><img alt="&bsol;alpha f&apos;&lowbar;&lcub;i-1&rcub; &plus; f&apos;&lowbar;i &plus; &bsol;alpha f&apos;&lowbar;&lcub;i &plus; 1&rcub; &equals; c&bsol;frac&lcub;f&lowbar;&lcub;i &plus; 3&rcub; - f&lowbar;&lcub;i - 3&rcub;&rcub;&lcub;6&bsol;Delta x&rcub; &plus; b&bsol;frac&lcub;f&lowbar;&lcub;i &plus; 2&rcub; - f&lowbar;&lcub;i - 2&rcub;&rcub;&lcub;4&bsol;Delta x&rcub; &plus; a&bsol;frac&lcub;f&lowbar;&lcub;i &plus; 1&rcub; - f&lowbar;&lcub;i - 1&rcub;&rcub;&lcub;2&bsol;Delta x&rcub;" valign="middle" src="images/alpha-f_i-1-f_i-alpha-f_i-1-cfracf_i-3-f_i-36-9b4d3ced7f.png" width="580" height="47"></p>
 
-This is a tridiagonal system that can be solved periodically to avoid dealing with boundary conditions.
+This is a tridiagonal system that can be [solved periodically](http://scijs.net/packages/#scijs/solve-periodic-tridiagonal) to avoid dealing with boundary conditions.
 
 ## Demos
 
